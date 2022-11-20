@@ -1,0 +1,38 @@
+@use "../../styles/partials/colors" as *;
+
+.about {
+
+    padding-top: 6rem;
+    height: 100vh;
+    background-color: $primary-bg;
+    color: $secondary-text;
+
+    &__content {
+        margin: 0 1rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    &__item {
+        list-style: none;
+        width: 4.75rem;
+        text-align: center;
+        margin: 0.15rem 0;
+
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

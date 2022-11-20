@@ -1,0 +1,36 @@
+.profile {
+    padding-top: 5rem;
+    height: 100vh;
+
+    &__hello {
+        margin: 1.25rem 1rem;
+        font-size: 1rem;
+    }
+
+
+    &__bio {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+        font-size: 1.25rem;
+    }
+
+    &__text {
+        display: block;
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    &__bold {
+        font-weight: 700;
+    }
+
+    &__img {
+        background-image: url('../../assets/images/rebecca.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 18rem;
+        margin: 1.25rem 0;
+    }
+}
