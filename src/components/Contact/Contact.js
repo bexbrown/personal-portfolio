@@ -5,9 +5,9 @@ function Contact() {
         <section className="contact" id="contact">
             <h2 className="contact__title">Keep in touch</h2>
             <ul className="contact__list">
-                <li className="contact__item">linkedin.com/in/bexbrown</li>
-                <li className="contact__item">github.com/bexbrown</li>
-                <li className="contact__item">codepen.io/bexbrown</li>
+                <a href="https://www.linkedin.com/in/bexbrown/"><li className="contact__item">LinkedIn</li></a>
+                <a href="https://github.com/bexbrown"><li className="contact__item">GitHub</li></a>
+                <a href="https://codepen.io/bexbrown"><li className="contact__item">CodePen</li></a>
             </ul>
         </section>
     )
