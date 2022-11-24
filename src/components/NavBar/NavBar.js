@@ -1,4 +1,5 @@
 import "./NavBar.scss";
+import Flower from "../../assets/icons/flower.png";
 
 function NavBar() {
     return (

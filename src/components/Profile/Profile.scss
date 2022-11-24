@@ -1,24 +1,54 @@
+@use "../../styles/partials/mixins" as *;
+
 .profile {
     padding-top: 5rem;
     height: 100vh;
 
+    @include desktop {
+        padding-top: 5rem;
+    }
+
     &__hello {
-        margin: 1.25rem 1rem;
-        font-size: 1rem;
+        padding: 1.25rem 1rem;
+        @include contain;
+
+        @include tablet {
+            padding: 1.75rem 2rem;
+        }
     }
 
 
     &__bio {
         display: flex;
         flex-direction: column;
-        margin: 0 1rem;
+        padding: 0 1rem;
         font-size: 1.25rem;
+        @include contain;
+
+        @include tablet {
+            font-size: 1.75rem;
+            padding: 0rem 2rem;
+        }
+
+        @include desktop {
+            font-size: 2.25rem;
+        }
     }
 
     &__text {
         display: block;
         text-align: center;
-        margin: 0 1rem;
+        padding: 0 1rem;
+        @include contain;
+
+        @include tablet {
+            font-size: 1.25rem;
+            padding: 0rem 2rem;
+        }
+
+        @include desktop {
+            font-size: 1.75rem;
+        }
     }
 
     &__bold {
@@ -27,10 +57,23 @@
 
     &__img {
         background-image: url('../../assets/images/rebecca.png');
-        background-position: center;
+        background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
         height: 18rem;
+        max-height: 19rem;
+        width: 100vw;
         margin: 1.25rem 0;
+        border-top: 3px solid pink;
+        border-bottom: 3px solid pink;
+
+        @include tablet {
+            margin: 1.75rem 0;
+            background-position: top;
+        }
+
+        @include desktop {
+            margin: 2.25rem 0;
+        }
     }
 }

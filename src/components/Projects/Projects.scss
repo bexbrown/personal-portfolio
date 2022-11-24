@@ -1,9 +1,14 @@
 @use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
 
 .projects {
     padding-top: 6rem;
     margin: 0 1rem;
     height: 100vh;
+
+    @include tablet {
+        margin: 0 2rem;
+    }
 
     &__title {
         text-transform: uppercase;
@@ -14,27 +19,102 @@
     &__content {
         display: flex;
         align-items: center;
+        justify-content: center;
+        @include contain;
+
+        @include tablet {
+            max-width: 40rem;
+        }
+    }
+
+    &__arrow {
+        height: 1.25rem;
+        width: 1.25rem;
+        cursor: pointer;
+
+        @include tablet {
+            height: 2.25rem;
+            width: 2.25rem;
+        }
+    }
+
+    &__arrow:hover {
+        transform: scale(1.15);
+
+    }
+
+    &__arrow--left {
+        @include tablet {
+            margin-right: 2rem;
+        }
+    }
+
+    &__arrow--right {
+        @include tablet {
+            margin-left: 2rem;
+        }
     }
 
     &__card {
-        border: 1px solid black;
-        padding: 0.75rem;
+        outline: 1px solid $primary-text;
+        // padding: 0.75rem;
         margin: 0.5rem;
-        background-color: $secondary-bg;
+        // background-color: $secondary-bg;
+        height: 20rem;
+
+        @include tablet {
+            height: 22rem;
+            width: 30rem;
+            // padding: 1.25rem;
+        }
+
+        @include desktop {
+            height: 27rem;
+            width: 40rem;
+            // padding: 1.75rem;
+        }
     }
+
 
     &__subtitle {
         margin: 0;
+        background-color: $primary-bg;
+        color: #fff;
+        padding: 0.75rem;
+        text-decoration: underline;
+        text-decoration-color: pink;
+        text-decoration-thickness: 3px;
+        @include tablet {
+            padding: 1.25rem;
+        }
+        @include desktop {
+            padding: 1.75rem;
+        }
     }
 
     &__description {
-        margin: 0.5rem 0 1rem 0;
+        // margin: 1rem 0;
+        min-height: 44%;
+        padding: 0rem 0.75rem;
+        @include tablet {
+            min-height: 33%;
+        } @include desktop {
+            min-height: 38%;
+        }
     }
 
     &__bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0.75rem;
+        @include tablet {
+            padding: 1.25rem;
+        }
+        @include desktop {
+            padding: 1.75rem;
+            padding-top: 0;
+        }
     }
 
     &__tech {
@@ -52,6 +132,16 @@
     &__item {
         width: 50%;
         text-align: center;
+        font-size: 0.75rem;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+
+        @include desktop {
+            font-size: 1.25rem;
+        }
+
     }
 
     &__icons {
@@ -59,10 +149,30 @@
         justify-content: space-evenly;
     }
 
+    &__icon {
+        height: 1.25rem;
+        width: 1.24rem;
+    }
+
     &__img {
-        height: 6rem;
-        width: 6rem;
-        border: 1px solid black;
+        height: 5.5rem;
+        width: 5.5rem;
+        outline: 1px solid black;
         align-self: flex-end;
+
+
+        @include tablet {
+            height: 7rem;
+            width: 7rem;
+        }
+
+        @include desktop {
+            height: 8rem;
+            width: 8rem;
+        }
+    }
+
+    &__img:hover {
+        outline: 3px solid pink;
     }
 }

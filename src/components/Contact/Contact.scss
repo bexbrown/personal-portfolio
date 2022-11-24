@@ -1,9 +1,13 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
 .contact {
 
-    padding-top: 6rem;
     height: 100vh;
-    // background-image: url(../../assets/images/clouds.jpg);
+    padding-top: 6rem;
+    // background-image: url('../../assets/images/clouds.jpg');
     background-size: cover;
+    background-color: $secondary-bg;
 
     &__title {
         text-transform: uppercase;
@@ -19,9 +23,60 @@
         align-items: center;
     }
 
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 8rem;
+        text-decoration: none;
+        color: $primary-text;
+        cursor: pointer;
+        margin: 0.2rem;
+
+        @include desktop {
+            margin: 0.5rem;
+        }
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+        text-decoration-color: pink;
+        text-decoration-thickness: 3px;
+    }
+
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+
+        @include tablet {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        @include desktop {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
     &__item {
         list-style: none;
         padding: 0.25rem;
+        width: 70%;
+        align-self: center;
+        font-size: 0.85rem;
+
+        @include tablet {
+            font-size: 1rem;
+            align-self: center;
+        }
+
+        @include desktop {
+            font-size: 1.25rem;
+            // padding: 0;
+
+
+        }
     }
 
 }

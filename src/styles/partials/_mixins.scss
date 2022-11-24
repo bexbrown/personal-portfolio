@@ -15,6 +15,16 @@
 }
 
 @mixin contain {
+    @media (min-width: $breakpoint-mobile) {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
     @media (min-width: $breakpoint-desktop) {
         max-width: 63.75rem;
         margin: 0 auto;
