@@ -22,3 +22,20 @@ body {
 h2 {
     margin: 0;
 }
+
+.section {
+    height: 100vh;
+}
+
+.navigation {
+    // position: fixed;
+    top: 0;
+}
+
+#fp-nav {
+    display: none;
+}
+
+div.fp-watermark {
+    display: none;
+}

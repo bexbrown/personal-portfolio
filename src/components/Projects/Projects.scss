@@ -56,22 +56,19 @@
     }
 
     &__card {
-        outline: 1px solid $primary-text;
-        // padding: 0.75rem;
+        border: 1px solid $primary-text;
+        border-radius: 3px;
         margin: 0.5rem;
-        // background-color: $secondary-bg;
         height: 20rem;
 
         @include tablet {
             height: 22rem;
             width: 30rem;
-            // padding: 1.25rem;
         }
 
         @include desktop {
             height: 27rem;
             width: 40rem;
-            // padding: 1.75rem;
         }
     }
 
@@ -81,9 +78,9 @@
         background-color: $primary-bg;
         color: #fff;
         padding: 0.75rem;
-        text-decoration: underline;
-        text-decoration-color: pink;
-        text-decoration-thickness: 3px;
+        // text-decoration: underline;
+        // text-decoration-color: pink;
+        // text-decoration-thickness: 3px;
         @include tablet {
             padding: 1.25rem;
         }
@@ -108,12 +105,15 @@
         align-items: center;
         justify-content: space-between;
         padding: 0.75rem;
+        height: 7rem;
         @include tablet {
             padding: 1.25rem;
+            height: 9.5rem;
         }
         @include desktop {
             padding: 1.75rem;
             padding-top: 0;
+            height: 9.75rem;
         }
     }
 
@@ -151,16 +151,23 @@
 
     &__icon {
         height: 1.25rem;
-        width: 1.24rem;
+        width: 1.25rem;
+        @include tablet {
+            height: 2rem;
+            width: 2rem;
+        }
+        @include desktop {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
     }
 
-    &__img {
+    &__link {
         height: 5.5rem;
         width: 5.5rem;
-        outline: 1px solid black;
-        align-self: flex-end;
-
-
+        border: 1px solid black;
+        border-radius: 3px;
         @include tablet {
             height: 7rem;
             width: 7rem;
@@ -172,7 +179,11 @@
         }
     }
 
-    &__img:hover {
+    // &__img {
+    //     // align-self: flex-end;
+    // }
+
+    &__link:hover {
         outline: 3px solid pink;
     }
 }

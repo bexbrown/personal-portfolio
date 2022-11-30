@@ -33,7 +33,7 @@ function About() {
     return (
         <section className="about" id="about">
             <div className="about__content">
-                <h2 className="about__title">About</h2>
+                <h2 className="about__title">About Me</h2>
                 <p className="about__text">I have been interested for the challenge of a full time web development bootcamp. With my newfound skills and I am ready to contriblue to design and development projects. </p>
                 <p className="about__text">I have been interested t knowledge which helped pb development hallenge of a full time web development bootcamp. With my newfound ski  web development and learning about weand learning about we web developmen web developmen knowledge which helped plls and I am ready to contriblue  learning about we web developmen web developmen knowledge which heto design and development projects. </p>
                 <p className="about__text">I have been interested and learning agn for 3+ years. Dabblind in online resources gave me a foundation of knowledge whichs pment bootcamp. With my newfound skills and I am ready to contriblue to design and development projects. </p>

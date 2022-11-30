@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import ArrowLeft from "../../assets/icons/arrow-left.png";
 import ArrowRight from "../../assets/icons/arrow-right.png";
-// import TurtleImg from "../../assets/images/turtle.png";
-// import SolarSystemImg from "../../assets/images/solar-system.png";
-// import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
-// import PlantPetsImg from "../../assets/images/plant-pets.png";
+import TurtleImg from "../../assets/images/turtle.png";
+import SolarSystemImg from "../../assets/images/solar-system.png";
+import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
+import PlantPetsImg from "../../assets/images/plant-pets.png";
 // import VideoPlayerImg from "../../assets/images/video-player.png";
 import HtmlImg from '../../assets/icons/html.png';
 import CssImg from '../../assets/icons/css.png';
@@ -29,38 +29,42 @@ function Projects() {
     let ProjectsInfo =
         [
             {
+                title: "Cash Out Calculator",
+                description: "This customized calculator was built for my current job in the service industry, to make the end of night cashout process a little easier.",
+                techs: ["Tailwind", "React", "TypeScript", "Balsamiq"],
+                icons: [],
+                url: "https://calculator.com",
+                // image: SolarSystemImg
+            },
+            {
                 title: "Sea Bound",
-                description: "Sea Bound is an interactive game highlighting the effects of plastic waste on the ocean ecosystems.  Basic features include some cool interesting impressive features which I built. Other Basic features include some cool interesting impressive features which I built. Basic features include some cool interesting impressive features which I built.",
-                techs: ["HTML", "CSS", "React", "MySQL", "Node", "Express"],
-                icons: [HtmlImg, CssImg, ReactImg, MySqlImg, NodeImg, ExpressImg],
+                description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, score keeper, end game on object collision, high score form and current leaderboard rankings.",
+                techs: ["SCSS", "React", "MySQL", "Node", "Express", "Figma"],
+                icons: [CssImg, ReactImg, MySqlImg, NodeImg, ExpressImg],
+                url: "https://seabound.netlify.app",
                 // image: TurtleImg
             },
             {
-                title: "Plant Pets",
-                description: "A green twist on the tamagotchi pet. Try to find all matches in the fewest possible attempts.There are some interesting impressive features which I built. Basic features include some cool interesting impressive features which I built.",
-                techs: ["HTML", "CSS", "React", "Node", "Express"],
-                icons: [HtmlImg, CssImg, ReactImg, NodeImg, ExpressImg ],
-                // image: PlantPetsImg
-            },
-            {
                 title: "Video Player Website",
-                description: "A Mock youtube video player.  Basic features include some cool interesting impressive features which I built. Basic features include some cool interesting impressive features which I built.",
-                techs: ["HTML", "CSS", "React", "MySQL", "Node", "Express"],
-                icons: [HtmlImg, CssImg, ReactImg, MySqlImg, NodeImg, ExpressImg],
+                description: "A multi-page video player website.  Features include a working comments section, ability to upload video, and toggle between videos.",
+                techs: ["SCSS", "React", "Node", "Express"],
+                icons: [CssImg, ReactImg, NodeImg, ExpressImg],
                 // image: VideoPlayerImg
             },
             {
                 title: "Etch-a-Sketch",
-                description: "Sketch out some awesome designs on this classic toy. Basic features include some cool interesting impressive features which I built. Other Basic features include some cool interesting impressive features which I built. Basic features include some cool interesting impressive features which I built.",
-                techs: ["HTML", "CSS", "JavaScript", "React"],
-                icons: [HtmlImg, CssImg, JsImg, ReactImg],
+                description: "Sketch out some fun designs on this classic toy.",
+                techs: ["HTML", "CSS", "JavaScript"],
+                icons: [HtmlImg, CssImg, JsImg],
+                url: "https://codepen.io/bexbrown/pen/KKeBqdb",
                 // image: EtchASketchImg
             },
             {
                 title: "Solar System Orbit",
-                description: "Sketch out some awesome designs on this classic toy. Basic features include some cool interesting impressive features which I built. Other Basic features include some cool interesting impressive features which I built. Basic features include some cool interesting impressive features which I built.",
+                description: "This mini project is out of this world. A design challenge to create solar system orbits moving at a speed relative to their actual units.",
                 techs: ["HTML", "CSS", "JavaScript"],
                 icons: [HtmlImg, CssImg, JsImg],
+                url: "https://codepen.io/bexbrown/pen/rNjvpMY",
                 // image: SolarSystemImg
             }
         ]
@@ -114,7 +118,7 @@ function Projects() {
                              </div> 
                         </div>
 
-                        <img className="projects__img" src={project.image}  alt="project demo"/>
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="projects__link"><img className="projects__img" src={project.image}  alt="project demo"/></a>
                     </div>
                 </div>
                 <img src={ArrowRight} alt="right arrow" className="projects__arrow projects__arrow--right" onClick={handleRightClick} />

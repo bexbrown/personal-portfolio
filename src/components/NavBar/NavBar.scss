@@ -10,6 +10,7 @@
     align-items: center;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
 
     @include tablet {
         padding: 1rem 2rem;
@@ -58,12 +59,14 @@
 
     &__link--profile {
         padding: 0.3rem;
-        border: 2px solid $primary-text;
+        border: 3px solid pink;
+
         border-radius: 50%;
     }
 
     &__link--profile:hover {
-        border: 3px solid pink;
+        // border: 3px solid pink;
+        color: pink;
         font-weight: 700;
         text-decoration: none;
     }
