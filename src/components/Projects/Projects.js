@@ -29,10 +29,10 @@ function Projects() {
     let ProjectsInfo =
         [
             {
-                title: "Cash Out Calculator",
-                description: "This customized calculator was built for my current job in the service industry, to make the end of night cashout process a little easier.",
-                techs: ["Tailwind", "React", "TypeScript", "Balsamiq"],
-                icons: [],
+                title: "Cashout Calculator",
+                description: "This custom calculator was built for my job in the service industry with the goal of making the end of night cashout process a little easier.",
+                techs: ["Tailwind", "React", "Balsamiq"],
+                icons: [ReactImg],
                 url: "https://calculator.com",
                 // image: SolarSystemImg
             },
@@ -42,7 +42,7 @@ function Projects() {
                 techs: ["SCSS", "React", "MySQL", "Node", "Express", "Figma"],
                 icons: [CssImg, ReactImg, MySqlImg, NodeImg, ExpressImg],
                 url: "https://seabound.netlify.app",
-                // image: TurtleImg
+                image: TurtleImg
             },
             {
                 title: "Video Player Website",
@@ -57,7 +57,7 @@ function Projects() {
                 techs: ["HTML", "CSS", "JavaScript"],
                 icons: [HtmlImg, CssImg, JsImg],
                 url: "https://codepen.io/bexbrown/pen/KKeBqdb",
-                // image: EtchASketchImg
+                image: EtchASketchImg
             },
             {
                 title: "Solar System Orbit",
@@ -65,7 +65,7 @@ function Projects() {
                 techs: ["HTML", "CSS", "JavaScript"],
                 icons: [HtmlImg, CssImg, JsImg],
                 url: "https://codepen.io/bexbrown/pen/rNjvpMY",
-                // image: SolarSystemImg
+                image: SolarSystemImg
             }
         ]
 
@@ -98,9 +98,11 @@ function Projects() {
 
     return (
         <section className="projects" id="projects">
+            <div className="projects__header"></div>
             <h2 className="projects__title">My Projects</h2>
             <div className="projects__content">
                 <img src={ArrowLeft} alt="left arrow" className="projects__arrow projects__arrow--left" onClick={handleLeftClick} />
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="projects__link">
                 <div className="projects__card">
                     <h3 className="projects__subtitle">{project.title}</h3>
                     <p className="projects__description">{project.description}</p>
@@ -118,9 +120,10 @@ function Projects() {
                              </div> 
                         </div>
 
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="projects__link"><img className="projects__img" src={project.image}  alt="project demo"/></a>
+                        <img className="projects__img" src={project.image}  alt="project demo"/>
                     </div>
                 </div>
+                </a>
                 <img src={ArrowRight} alt="right arrow" className="projects__arrow projects__arrow--right" onClick={handleRightClick} />
             </div>
         </section>

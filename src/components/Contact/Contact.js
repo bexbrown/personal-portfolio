@@ -6,6 +6,7 @@ import CodePenImg from '../../assets/icons/codepen.png';
 function Contact() {
     return (
         <section className="contact" id="contact">
+            <div className="contact__header"></div>
 
 
             <h2 className="contact__title">Keep in touch</h2>

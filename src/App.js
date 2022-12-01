@@ -7,7 +7,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 
-const anchors = ["profile", "about", "projects", "contact"];
+const anchors = ["1", "2", "3", "4"];
 
 const App = () => (
   <>
@@ -26,10 +26,13 @@ const App = () => (
       return (
           
             <div>
-              <div className="section" data-anchor="profile"><Profile /></div>
-              <div className="section" data-anchor="about"><About /></div>
-              <div className="section" data-anchor="projects"><Projects /></div>
-              <div className="section" data-anchor="contact"><Contact /></div>
+  {/* <NavBar className="navigation"/> */}
+
+              {/* <div className="section" data-anchor="profile"><Profile /></div> */}
+              <div className="section" ><Profile id="profile"/></div>
+              <div className="section" ><About id="about"/></div>
+              <div className="section" ><Projects id="projects"/></div>
+              <div className="section" ><Contact id="contact"/></div>
             </div>
         
       );
