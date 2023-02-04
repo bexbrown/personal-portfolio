@@ -7,9 +7,11 @@
     &__header {
         height: 69.59px;
         background-color: pink;
+
         @include tablet {
             height: 82.09px;
         }
+
         @include desktop {
             height: 86.59px;
         }
@@ -63,6 +65,7 @@
 
     &__link {
         text-decoration: none;
+        border: 1px solid #fff;
         color: $primary-text;
     }
 
@@ -76,7 +79,6 @@
     &__card {
         border: 1px solid $primary-text;
         border-radius: 3px;
-        // margin: 0.25rem;
         height: 20rem;
 
         @include tablet {
@@ -96,12 +98,14 @@
         background-color: $primary-bg;
         color: #fff;
         padding: 0.75rem;
-        text-decoration: underline;
-        text-decoration-color: pink;
-        text-decoration-thickness: 3px;
+        // text-decoration: underline;
+        // text-decoration-color: pink;
+        // text-decoration-thickness: 3px;
+
         @include tablet {
             padding: 1.25rem;
         }
+
         @include desktop {
             padding: 1.75rem;
         }
@@ -110,9 +114,13 @@
     &__description {
         min-height: 44%;
         padding: 0rem 0.75rem;
+        line-height: 125%;
+
         @include tablet {
             min-height: 33%;
-        } @include desktop {
+        }
+
+        @include desktop {
             min-height: 38%;
         }
     }
@@ -123,10 +131,12 @@
         justify-content: space-between;
         padding: 0.75rem;
         height: 7rem;
+
         @include tablet {
             padding: 1.25rem;
             height: 9.5rem;
         }
+
         @include desktop {
             padding: 1.75rem;
             padding-top: 0;
@@ -168,10 +178,12 @@
     &__icon {
         height: 1.25rem;
         width: 1.25rem;
+
         @include tablet {
             height: 2rem;
             width: 2rem;
         }
+
         @include desktop {
             height: 2.5rem;
             width: 2.5rem;
@@ -184,16 +196,17 @@
         width: 5.5rem;
         border: 1px solid $primary-text;
         border-radius: 3px;
+
         @include tablet {
             height: 7rem;
             width: 7rem;
         }
-    
+
         @include desktop {
             height: 8rem;
             width: 8rem;
         }
     }
 
- 
+
 }

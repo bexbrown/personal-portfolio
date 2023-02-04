@@ -39,16 +39,25 @@
         display: block;
         text-align: center;
         padding: 0 1rem;
+
         @include contain;
 
         @include tablet {
             font-size: 1.25rem;
             padding: 0rem 2rem;
+            line-height: 140%;
         }
 
         @include desktop {
             font-size: 1.75rem;
         }
+    }
+
+    &__text--top {
+        @include tablet {
+            line-height: 130%;
+        }
+
     }
 
     &__bold {

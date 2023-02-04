@@ -4,9 +4,12 @@ import { v4 as uuidv4 } from 'uuid';
 import ArrowLeft from "../../assets/icons/arrow-left.png";
 import ArrowRight from "../../assets/icons/arrow-right.png";
 import TurtleImg from "../../assets/images/turtle.png";
+import BrainflixImg from "../../assets/images/brainflix.png";
 import SolarSystemImg from "../../assets/images/solar-system.png";
 import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
-import PlantPetsImg from "../../assets/images/plant-pets.png";
+// import PlantPetsImg from "../../assets/images/plant-pets.png";
+// import RockPaperScissorsImg from "../../assets/images/rock-paper-scissors.png"
+import CashoutCalculatorImg from "../../assets/images/cashout-calculator.png"
 // import VideoPlayerImg from "../../assets/images/video-player.png";
 import HtmlImg from '../../assets/icons/html.png';
 import CssImg from '../../assets/icons/css.png';
@@ -14,12 +17,12 @@ import JsImg from '../../assets/icons/js.png';
 import ReactImg from '../../assets/icons/react.png';
 import NodeImg from '../../assets/icons/node.png';
 import ExpressImg from '../../assets/icons/express.png';
-import TypescriptImg from '../../assets/icons/typescript.png';
+// import TypescriptImg from '../../assets/icons/typescript.png';
 import MySqlImg from '../../assets/icons/mysql.png';
 import GitImg from '../../assets/icons/git.png';
-import GitHubImg from '../../assets/icons/github.png';
-import JestImg from '../../assets/icons/jest.png';
-import FigmaImg from '../../assets/icons/figma.png';
+// import GitHubImg from '../../assets/icons/github.png';
+// import JestImg from '../../assets/icons/jest.png';
+// import FigmaImg from '../../assets/icons/figma.png';
 
 
 
@@ -29,12 +32,12 @@ function Projects() {
     let ProjectsInfo =
         [
             {
-                title: "Cashout Calculator",
-                description: "This custom calculator was built for my job in the service industry with the goal of making the end of night cashout process a little easier.",
-                techs: ["Tailwind", "React", "Balsamiq"],
-                icons: [ReactImg],
+                title: "Cash Out Calculator",
+                description: "This custom calculator was built for my job in the service industry with the goal of making the end of night cash out process a little easier.",
+                techs: ["React", "SCSS"],
+                icons: [ReactImg, CssImg],
                 url: "https://calculator.com",
-                // image: SolarSystemImg
+                image: CashoutCalculatorImg
             },
             {
                 title: "Sea Bound",
@@ -49,8 +52,24 @@ function Projects() {
                 description: "A multi-page video player website.  Features include a working comments section, ability to upload video, and toggle between videos.",
                 techs: ["SCSS", "React", "Node", "Express"],
                 icons: [CssImg, ReactImg, NodeImg, ExpressImg],
-                // image: VideoPlayerImg
+                image: BrainflixImg
             },
+            // {
+            // title: "Rock, Paper, Scissors",
+            // description: "Battle against the computer in this simple game.",
+            // techs: ["HTML", "SCSS", "React"],
+            // icons: [HtmlImg, CssImg, ReactImg],
+            // // url: "https://codepen.io/bexbrown/pen/rNKZEWR",
+            // image: RockPaperScissorsImg
+            // },
+            // {
+            //     title: "Matching Game",
+            //     description: "Test your memory with this game. Match the coloured tiles with their pair in the fewest attempts possible.",
+            //     techs: ["SCSS", "React", "Node", "Express"],
+            //     icons: [CssImg, ReactImg, NodeImg, ExpressImg],
+            //     url: "https://codepen.io/bexbrown/pen/rNKZEWR",
+            //     // image: VideoPlayerImg
+            // },
             {
                 title: "Etch-a-Sketch",
                 description: "Sketch out some fun designs on this classic toy.",
@@ -103,26 +122,26 @@ function Projects() {
             <div className="projects__content">
                 <img src={ArrowLeft} alt="left arrow" className="projects__arrow projects__arrow--left" onClick={handleLeftClick} />
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="projects__link">
-                <div className="projects__card">
-                    <h3 className="projects__subtitle">{project.title}</h3>
-                    <p className="projects__description">{project.description}</p>
-                    <div className="projects__bottom">
-                        <div className="projects__tech">
-                            <ul className="projects__list">
-                            {project.techs.map((tech) => {
-                                return <li className="projects__item" key={uuidv4()}>{tech}</li>
-                            })}
-                            </ul>
-                            <div className="projects__icons">
-                            {project.icons.map((icon, index) => {
-                                return <img src={icon} alt={project.techs[index]} className="projects__icon" key={uuidv4()}/>
-                            })} 
-                             </div> 
-                        </div>
+                    <div className="projects__card">
+                        <h3 className="projects__subtitle">{project.title}</h3>
+                        <p className="projects__description">{project.description}</p>
+                        <div className="projects__bottom">
+                            <div className="projects__tech">
+                                <ul className="projects__list">
+                                    {project.techs.map((tech) => {
+                                        return <li className="projects__item" key={uuidv4()}>{tech}</li>
+                                    })}
+                                </ul>
+                                <div className="projects__icons">
+                                    {project.icons.map((icon, index) => {
+                                        return <img src={icon} alt={project.techs[index]} className="projects__icon" key={uuidv4()} />
+                                    })}
+                                </div>
+                            </div>
 
-                        <img className="projects__img" src={project.image}  alt="project demo"/>
+                            <img className="projects__img" src={project.image} alt="project demo" />
+                        </div>
                     </div>
-                </div>
                 </a>
                 <img src={ArrowRight} alt="right arrow" className="projects__arrow projects__arrow--right" onClick={handleRightClick} />
             </div>
