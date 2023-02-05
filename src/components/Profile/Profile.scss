@@ -1,25 +1,20 @@
 @use "../../styles/partials/mixins" as *;
 
 .profile {
-    height: 100vh;
+    // height: 100vh;
     // padding-top: 5rem;
 
 
     @include desktop {
-        // padding-top: 5rem;
+        // padding-top: 1rem;
     }
 
     &__hello {
-        padding-top: 5rem;
         padding: 1.25rem 1rem;
         @include contain;
 
         @include tablet {
             padding: 1.75rem 2rem;
-        }
-
-        @include desktop {
-            padding-top: 7rem;
         }
     }
 
