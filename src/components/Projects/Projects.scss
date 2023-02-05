@@ -11,6 +11,7 @@
         width: 100%;
         background-color: pink;
         display: block;
+        float: left;
 
         @include tablet {
             height: 82.09px;
