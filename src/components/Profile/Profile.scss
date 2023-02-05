@@ -1,8 +1,9 @@
 @use "../../styles/partials/mixins" as *;
 
 .profile {
-    padding-top: 5rem;
     height: 100vh;
+    padding-top: 5rem;
+
 
     @include desktop {
         padding-top: 5rem;

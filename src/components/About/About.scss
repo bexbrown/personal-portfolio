@@ -2,9 +2,8 @@
 @use "../../styles/partials/mixins" as *;
 
 .about {
-
-    padding-top: 69.59px;
     height: 100vh;
+    padding-top: 69.59px;
     background-color: $primary-bg;
     color: $primary-text;
     display: flex;
