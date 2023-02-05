@@ -1,13 +1,19 @@
 @use "../../styles/partials/mixins" as *;
 
 .profile {
-    // height: 100vh;
-    // padding-top: 5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // // padding-top: 5rem;
 
 
-    @include desktop {
-        // padding-top: 1rem;
-    }
+    // @include desktop {
+    //     // padding-top: 1rem;
+    // }
+
+    // &__container {}
 
     &__hello {
         padding: 1.25rem 1rem;
