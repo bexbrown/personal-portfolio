@@ -110,7 +110,7 @@ function Projects() {
 
     return (
         <section className="projects" id="projects">
-            <div className="projects__header"></div>
+            <div className="projects__header"> &nbsp</div>
             <div className="projects__container">
                 <h2 className="projects__title">My Projects</h2>
                 <div className="projects__content">
