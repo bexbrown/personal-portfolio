@@ -8,7 +8,7 @@
     color: $primary-text;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 6px solid pink;
     padding: 0;
@@ -42,18 +42,16 @@
     &__content {
         padding: 0 1rem;
         background-color: white;
-        height: calc(100vh - 69.59px);
-
-
+        max-height: calc(100vh - 69.59px);
         @include contain;
 
         @include tablet {
             padding: 0 4rem;
-            height: calc(100vh - 82.09px);
+            max-height: calc(100vh - 82.09px);
         }
 
         @include desktop {
-            height: calc(100vh - 86.59px);
+            max-height: calc(100vh - 86.59px);
         }
 
     }
