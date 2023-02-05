@@ -2,11 +2,11 @@
 
 .profile {
     height: 100vh;
-    padding-top: 5rem;
+    margin-top: 5rem;
 
 
     @include desktop {
-        padding-top: 5%;
+        margin-top: 5rem;
     }
 
     &__hello {
