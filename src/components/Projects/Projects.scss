@@ -3,10 +3,14 @@
 
 .projects {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     &__header {
         height: 69.59px;
+        width: 100%;
         background-color: pink;
+        display: inline-block;
 
         @include tablet {
             height: 82.09px;
