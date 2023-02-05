@@ -42,16 +42,16 @@
     &__content {
         padding: 0 1rem;
         background-color: white;
-        max-height: calc(100vh - 69.59px);
+        min-height: calc(100vh - 69.59px);
         @include contain;
 
         @include tablet {
             padding: 0 4rem;
-            max-height: calc(100vh - 82.09px);
+            min-height: calc(100vh - 82.09px);
         }
 
         @include desktop {
-            max-height: calc(100vh - 86.59px);
+            min-height: calc(100vh - 86.59px);
         }
 
     }
