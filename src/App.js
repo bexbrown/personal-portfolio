@@ -9,10 +9,13 @@ import Contact from './components/Contact/Contact';
 
 const anchors = ["1", "2", "3", "4"];
 
+
 const App = () => (
   <>
+
     <NavBar className="navigation" />
     <ReactFullpage
+      licenseKey="S9LE8-RJ1RI-H36JH-OUM08-NLSKM"
       anchors={anchors}
       navigation
       navigationTooltips={anchors}
