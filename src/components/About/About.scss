@@ -25,8 +25,9 @@
         min-height: 69.59px;
         width: 100%;
         background-color: $primary-bg;
-        position: relative;
-        float: top;
+        display: inline;
+        // position: relative;
+        // float: top;
         // border-bottom: 6px solid pink;
 
         @include tablet {
@@ -42,16 +43,16 @@
     &__content {
         padding: 0 1rem;
         background-color: white;
-        min-height: calc(100vh - 69.59px);
+        height: calc(100vh - 69.59px);
         @include contain;
 
         @include tablet {
             padding: 0 4rem;
-            min-height: calc(100vh - 82.09px);
+            height: calc(100vh - 82.09px);
         }
 
         @include desktop {
-            min-height: calc(100vh - 86.59px);
+            height: calc(100vh - 86.59px);
         }
 
     }
