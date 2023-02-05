@@ -28,6 +28,7 @@ function About() {
 
     return (
         <section className="about" id="about">
+            <div className="about__navbar"></div>
             <div className="about__content">
                 <h2 className="about__title">About Me</h2>
                 <p className="about__text">Hello! My name is Rebecca and I create interactive websites and intuitive digital experiences. I am currently living in Toronto, Canada and have had the opportunity to live in 7+ countries.  I love exploring the world and the web.</p>
