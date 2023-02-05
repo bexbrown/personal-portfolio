@@ -45,13 +45,13 @@
         padding: 0 1rem;
         background-color: white;
         // border-top: 6px solid pink;
-        // height: calc(100vh - 69.59px);
-        height: 100%;
+        height: calc(100vh - 69.59px);
+        // height: 100%;
         @include contain;
 
         @include tablet {
             padding: 0 4rem;
-            // height: calc(100vh - 82.09px);
+            height: calc(100vh - 82.09px);
         }
 
         @include desktop {

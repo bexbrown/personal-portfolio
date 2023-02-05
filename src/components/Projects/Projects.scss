@@ -26,7 +26,16 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 100%;
+        // height: 100%;
+        height: calc(100vh - 69.59px);
+
+        @include tablet {
+            height: calc(100vh - 82.09px);
+        }
+
+        @include desktop {
+            height: calc(100vh - 86.59px);
+        }
     }
 
     &__title {
