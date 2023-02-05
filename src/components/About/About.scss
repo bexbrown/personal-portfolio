@@ -25,7 +25,8 @@
         min-height: 69.59px;
         width: 100%;
         background-color: $primary-bg;
-        display: inline-block;
+        position: relative;
+        float: top;
         // border-bottom: 6px solid pink;
 
         @include tablet {
