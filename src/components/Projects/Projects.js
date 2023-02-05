@@ -7,25 +7,14 @@ import TurtleImg from "../../assets/images/turtle.png";
 import BrainflixImg from "../../assets/images/brainflix.png";
 import SolarSystemImg from "../../assets/images/solar-system.png";
 import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
-// import PlantPetsImg from "../../assets/images/plant-pets.png";
-// import RockPaperScissorsImg from "../../assets/images/rock-paper-scissors.png"
 import CashoutCalculatorImg from "../../assets/images/cashout-calculator.png"
-// import VideoPlayerImg from "../../assets/images/video-player.png";
 import HtmlImg from '../../assets/icons/html.png';
 import CssImg from '../../assets/icons/css.png';
 import JsImg from '../../assets/icons/js.png';
 import ReactImg from '../../assets/icons/react.png';
 import NodeImg from '../../assets/icons/node.png';
 import ExpressImg from '../../assets/icons/express.png';
-// import TypescriptImg from '../../assets/icons/typescript.png';
 import MySqlImg from '../../assets/icons/mysql.png';
-import GitImg from '../../assets/icons/git.png';
-// import GitHubImg from '../../assets/icons/github.png';
-// import JestImg from '../../assets/icons/jest.png';
-// import FigmaImg from '../../assets/icons/figma.png';
-
-
-
 
 function Projects() {
 
@@ -96,8 +85,10 @@ function Projects() {
         event.preventDefault();
         if (count === 0) {
             setCount(ProjectsInfo.length - 1);
+            // setProject(ProjectsInfo[count]);
         } else {
             setCount(count - 1);
+            // setProject(ProjectsInfo[count]);
         }
     }
 
@@ -105,8 +96,10 @@ function Projects() {
         event.preventDefault();
         if (count === ProjectsInfo.length - 1) {
             setCount(0);
+            // setProject(ProjectsInfo[count]);
         } else {
             setCount(count + 1);
+            // setProject(ProjectsInfo[count]);
         }
     }
 

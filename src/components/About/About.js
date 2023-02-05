@@ -1,16 +1,12 @@
 import "./About.scss";
-// import { useState } from "react";
 import HtmlImg from '../../assets/icons/html.png';
 import CssImg from '../../assets/icons/css.png';
 import JsImg from '../../assets/icons/js.png';
 import ReactImg from '../../assets/icons/react.png';
 import NodeImg from '../../assets/icons/node.png';
 import ExpressImg from '../../assets/icons/express.png';
-import TypescriptImg from '../../assets/icons/typescript.png';
 import MySqlImg from '../../assets/icons/mysql.png';
 import GitImg from '../../assets/icons/git.png';
-import GitHubImg from '../../assets/icons/github.png';
-import JestImg from '../../assets/icons/jest.png';
 import FigmaImg from '../../assets/icons/figma.png';
 
 function About() {
@@ -21,7 +17,7 @@ function About() {
     function handleIconEnter(event) {
         event.preventDefault();
         console.log(event.target.id);
-        event.target.style.backgroundColor = "pink";
+        event.target.style.backgroundColor = "#fff";
     }
 
     function handleIconLeave(event) {

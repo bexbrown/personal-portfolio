@@ -1,6 +1,6 @@
 import "./NavBar.scss";
-import Flower from "../../assets/icons/flower.png";
-import { Link } from "react-router-dom";
+// import Flower from "../../assets/icons/flower.png";
+// import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
@@ -9,13 +9,13 @@ function NavBar() {
             <ul className="nav__links">
                 <a href="#2" className="nav__link">
                     <li className="nav__item">About</li>
-                    </a>
+                </a>
                 <a href="#3" className="nav__link">
                     <li className="nav__item">Projects</li>
-                    </a>
+                </a>
                 <a href="#4" className="nav__link">
                     <li className="nav__item">Contact</li>
-                    </a>
+                </a>
             </ul>
         </nav >
     )
