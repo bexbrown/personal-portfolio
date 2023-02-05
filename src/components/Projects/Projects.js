@@ -111,32 +111,34 @@ function Projects() {
     return (
         <section className="projects" id="projects">
             <div className="projects__header"></div>
-            <h2 className="projects__title">My Projects</h2>
-            <div className="projects__content">
-                <img src={ArrowLeft} alt="left arrow" className="projects__arrow projects__arrow--left" onClick={handleLeftClick} />
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="projects__link">
-                    <div className="projects__card">
-                        <h3 className="projects__subtitle">{project.title}</h3>
-                        <p className="projects__description">{project.description}</p>
-                        <div className="projects__bottom">
-                            <div className="projects__tech">
-                                <ul className="projects__list">
-                                    {project.techs.map((tech) => {
-                                        return <li className="projects__item" key={uuidv4()}>{tech}</li>
-                                    })}
-                                </ul>
-                                <div className="projects__icons">
-                                    {project.icons.map((icon, index) => {
-                                        return <img src={icon} alt={project.techs[index]} className="projects__icon" key={uuidv4()} />
-                                    })}
+            <div className="projects__container">
+                <h2 className="projects__title">My Projects</h2>
+                <div className="projects__content">
+                    <img src={ArrowLeft} alt="left arrow" className="projects__arrow projects__arrow--left" onClick={handleLeftClick} />
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="projects__link">
+                        <div className="projects__card">
+                            <h3 className="projects__subtitle">{project.title}</h3>
+                            <p className="projects__description">{project.description}</p>
+                            <div className="projects__bottom">
+                                <div className="projects__tech">
+                                    <ul className="projects__list">
+                                        {project.techs.map((tech) => {
+                                            return <li className="projects__item" key={uuidv4()}>{tech}</li>
+                                        })}
+                                    </ul>
+                                    <div className="projects__icons">
+                                        {project.icons.map((icon, index) => {
+                                            return <img src={icon} alt={project.techs[index]} className="projects__icon" key={uuidv4()} />
+                                        })}
+                                    </div>
                                 </div>
-                            </div>
 
-                            <img className="projects__img" src={project.image} alt="project demo" />
+                                <img className="projects__img" src={project.image} alt="project demo" />
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <img src={ArrowRight} alt="right arrow" className="projects__arrow projects__arrow--right" onClick={handleRightClick} />
+                    </a>
+                    <img src={ArrowRight} alt="right arrow" className="projects__arrow projects__arrow--right" onClick={handleRightClick} />
+                </div>
             </div>
         </section>
     )
