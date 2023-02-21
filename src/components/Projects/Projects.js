@@ -25,7 +25,7 @@ function Projects() {
                 description: "This custom calculator was built for my job in the service industry with the goal of making the end of night cash out process a little easier.",
                 techs: ["React", "SCSS"],
                 icons: [ReactImg, CssImg],
-                url: "https://calculator.com",
+                url: "https://cashout-calculator.netlify.app",
                 image: CashoutCalculatorImg
             },
             {
@@ -41,6 +41,7 @@ function Projects() {
                 description: "A multi-page video player website.  Features include a working comments section, ability to upload video, and toggle between videos.",
                 techs: ["SCSS", "React", "Node", "Express"],
                 icons: [CssImg, ReactImg, NodeImg, ExpressImg],
+                url: "https://quickflix.netlify.app",
                 image: BrainflixImg
             },
             // {
