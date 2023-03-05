@@ -37,14 +37,14 @@ function Projects() {
                 url: "https://seabound.netlify.app",
                 image: TurtleImg
             },
-            {
-                title: "Video Player Website",
-                description: "A multi-page video player website.  Features include a working comments section, ability to upload video, and toggle between videos.",
-                techs: ["SCSS", "React", "Node", "Express"],
-                icons: [CssImg, ReactImg, NodeImg, ExpressImg],
-                url: "https://quickflix.netlify.app",
-                image: BrainflixImg
-            },
+            // {
+            //     title: "Video Player Website",
+            //     description: "A multi-page video player website.  Features include a working comments section, ability to upload video, and toggle between videos.",
+            //     techs: ["SCSS", "React", "Node", "Express"],
+            //     icons: [CssImg, ReactImg, NodeImg, ExpressImg],
+            //     url: "https://quickflix.netlify.app",
+            //     image: BrainflixImg
+            // },
             {
                 title: "Rock, Paper, Scissors",
                 description: "Battle against the computer in this simple game.",
@@ -53,14 +53,14 @@ function Projects() {
                 // url: "https://codepen.io/bexbrown/pen/rNKZEWR",
                 image: RockPaperScissorsImg
             },
-            // {
-            //     title: "Matching Game",
-            //     description: "Test your memory with this game. Match the coloured tiles with their pair in the fewest attempts possible.",
-            //     techs: ["SCSS", "React", "Node", "Express"],
-            //     icons: [CssImg, ReactImg, NodeImg, ExpressImg],
-            //     url: "https://codepen.io/bexbrown/pen/rNKZEWR",
-            //     // image: VideoPlayerImg
-            // },
+            {
+                title: "Matching Game",
+                description: "Test your memory with this game. Match the coloured tiles with their pair in the fewest attempts possible.",
+                techs: ["SCSS", "React", "Node", "Express"],
+                icons: [CssImg, ReactImg, NodeImg, ExpressImg],
+                url: "https://codepen.io/bexbrown/pen/rNKZEWR",
+                // image: VideoPlayerImg
+            },
             {
                 title: "Etch-a-Sketch",
                 description: "Sketch out some fun designs on this classic toy.",
