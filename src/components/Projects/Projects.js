@@ -8,6 +8,7 @@ import BrainflixImg from "../../assets/images/brainflix.png";
 import SolarSystemImg from "../../assets/images/solar-system.png";
 import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
 import CashoutCalculatorImg from "../../assets/images/cashout-calculator.png"
+import RockPaperScissorsImg from "../../assets/images/rock-paper-scissors.png";
 import HtmlImg from '../../assets/icons/html.png';
 import CssImg from '../../assets/icons/css.png';
 import JsImg from '../../assets/icons/js.png';
@@ -44,14 +45,14 @@ function Projects() {
                 url: "https://quickflix.netlify.app",
                 image: BrainflixImg
             },
-            // {
-            // title: "Rock, Paper, Scissors",
-            // description: "Battle against the computer in this simple game.",
-            // techs: ["HTML", "SCSS", "React"],
-            // icons: [HtmlImg, CssImg, ReactImg],
-            // // url: "https://codepen.io/bexbrown/pen/rNKZEWR",
-            // image: RockPaperScissorsImg
-            // },
+            {
+                title: "Rock, Paper, Scissors",
+                description: "Battle against the computer in this simple game.",
+                techs: ["HTML", "SCSS", "React"],
+                icons: [HtmlImg, CssImg, ReactImg],
+                // url: "https://codepen.io/bexbrown/pen/rNKZEWR",
+                image: RockPaperScissorsImg
+            },
             // {
             //     title: "Matching Game",
             //     description: "Test your memory with this game. Match the coloured tiles with their pair in the fewest attempts possible.",
