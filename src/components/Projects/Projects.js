@@ -50,7 +50,7 @@ function Projects() {
                 description: "Battle against the computer in this simple game.",
                 techs: ["HTML", "SCSS", "React"],
                 icons: [HtmlImg, CssImg, ReactImg],
-                // url: "https://codepen.io/bexbrown/pen/rNKZEWR",
+                url: "https://bexbrown-rps-game.netlify.app",
                 image: RockPaperScissorsImg
             },
             {
