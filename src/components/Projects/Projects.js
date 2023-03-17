@@ -53,14 +53,14 @@ function Projects() {
                 url: "https://bexbrown-rps-game.netlify.app",
                 image: RockPaperScissorsImg
             },
-            {
-                title: "Matching Game",
-                description: "Test your memory with this game. Match the coloured tiles with their pair in the fewest attempts possible.",
-                techs: ["SCSS", "React", "Node", "Express"],
-                icons: [CssImg, ReactImg, NodeImg, ExpressImg],
-                url: "https://codepen.io/bexbrown/pen/rNKZEWR",
-                // image: VideoPlayerImg
-            },
+            // {
+            //     title: "Matching Game",
+            //     description: "Test your memory with this game. Match the coloured tiles with their pair in the fewest attempts possible.",
+            //     techs: ["SCSS", "React", "Node", "Express"],
+            //     icons: [CssImg, ReactImg, NodeImg, ExpressImg],
+            //     url: "https://codepen.io/bexbrown/pen/rNKZEWR",
+            //     // image: VideoPlayerImg
+            // },
             {
                 title: "Etch-a-Sketch",
                 description: "Sketch out some fun designs on this classic toy.",
