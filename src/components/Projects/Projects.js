@@ -56,7 +56,7 @@ function Projects() {
             // },
             {
                 title: "Rock, Paper, Scissors",
-                description: "Battle against the computer in this simple game.",
+                description: "Test your luck against the computer in this classic and simple game.",
                 techs: ["HTML", "SCSS", "React"],
                 icons: [HtmlImg, CssImg, ReactImg],
                 url: "https://bexbrown-rps-game.netlify.app",
@@ -72,7 +72,7 @@ function Projects() {
             // },
             {
                 title: "Etch-a-Sketch",
-                description: "Sketch out some fun designs on this classic toy.",
+                description: "Sketch out some fun designs on this classic toy, then clear the board and start again!",
                 techs: ["HTML", "CSS", "JavaScript"],
                 icons: [HtmlImg, CssImg, JsImg],
                 url: "https://codepen.io/bexbrown/pen/KKeBqdb",
