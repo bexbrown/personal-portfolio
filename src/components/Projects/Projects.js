@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import ArrowLeft from "../../assets/icons/arrow-left.png";
 import ArrowRight from "../../assets/icons/arrow-right.png";
 import TurtleImg from "../../assets/images/turtle.png";
-import BrainflixImg from "../../assets/images/brainflix.png";
+// import BrainflixImg from "../../assets/images/brainflix.png";
 import SolarSystemImg from "../../assets/images/solar-system.png";
 import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
 import CashoutCalculatorImg from "../../assets/images/cashout-calculator.png"
@@ -16,6 +16,7 @@ import ReactImg from '../../assets/icons/react.png';
 import NodeImg from '../../assets/icons/node.png';
 import ExpressImg from '../../assets/icons/express.png';
 import MySqlImg from '../../assets/icons/mysql.png';
+import BandSiteImg from '../../assets/images/band-site.png';
 
 function Projects() {
 
@@ -36,6 +37,14 @@ function Projects() {
                 icons: [CssImg, ReactImg, MySqlImg, NodeImg, ExpressImg],
                 url: "https://seabound.netlify.app",
                 image: TurtleImg
+            },
+            {
+                title: "Band Website",
+                description: "A multi-page band website.  Features include a working comments section, embedded music player, and photo hover effects.",
+                techs: ["HTML", "SCSS", "React"],
+                icons: [HtmlImg, CssImg, ReactImg],
+                url: "https://thebeeskneesband.netlify.app",
+                image: BandSiteImg
             },
             // {
             //     title: "Video Player Website",
