@@ -32,7 +32,7 @@ function Projects() {
             },
             {
                 title: "Sea Bound",
-                description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, score keeper, end game on object collision, high score form and current leaderboard rankings.",
+                description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, score keeper, end game on object collision, high score form and current leaderboard rankings.  ***ONLY AVAILABLE ON DESKTOP AS IT REQUIRES ARROW KEYS***",
                 techs: ["SCSS", "React", "MySQL", "Node", "Express", "Figma"],
                 icons: [CssImg, ReactImg, MySqlImg, NodeImg, ExpressImg],
                 url: "https://seabound.netlify.app",
@@ -78,14 +78,14 @@ function Projects() {
                 url: "https://codepen.io/bexbrown/pen/KKeBqdb",
                 image: EtchASketchImg
             },
-            {
-                title: "Solar System Orbit",
-                description: "This mini project is out of this world. A design challenge to create solar system orbits moving at a speed relative to their actual units.",
-                techs: ["HTML", "CSS", "JavaScript"],
-                icons: [HtmlImg, CssImg, JsImg],
-                url: "https://codepen.io/bexbrown/pen/rNjvpMY",
-                image: SolarSystemImg
-            }
+            // {
+            //     title: "Solar System Orbit",
+            //     description: "This mini project is out of this world. A design challenge to create solar system orbits moving at a speed relative to their actual units.",
+            //     techs: ["HTML", "CSS", "JavaScript"],
+            //     icons: [HtmlImg, CssImg, JsImg],
+            //     url: "https://codepen.io/bexbrown/pen/rNjvpMY",
+            //     image: SolarSystemImg
+            // }
         ]
 
 
