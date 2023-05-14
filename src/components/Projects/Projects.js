@@ -25,9 +25,9 @@ function Projects() {
         [
             {
                 title: "Sea Bound",
-                description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, score keeper, end game on object collision, high score form and current leaderboard rankings.  ***ONLY AVAILABLE ON DESKTOP AS IT REQUIRES ARROW KEYS***",
-                techs: ["SCSS", "React", "MySQL", "Node", "Express", "Figma"],
-                icons: [CssImg, ReactImg, MySqlImg, NodeImg, ExpressImg],
+                description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, and a score keeper.  ***Not available on mobile or tablet devices as it requires arrow keys to navigate***",
+                techs: ["HTML", "SCSS", "React"],
+                icons: [HtmlImg, CssImg, ReactImg],
                 url: "https://seabound.netlify.app",
                 image: TurtleImg
             },
@@ -42,16 +42,16 @@ function Projects() {
             {
                 title: "Multi Step Form",
                 description: "A multi-step form which includes a toggle feature, choice of add-ons, summary of selections and confirmation of order.",
-                techs: ["React", "SCSS"],
-                icons: [ReactImg, CssImg],
+                techs: ["HTML", "SCSS", "React"],
+                icons: [HtmlImg, CssImg, ReactImg],
                 url: "https://bexbrown-multi-step-form.netlify.app/",
                 image: MultiStepFormImg
             },
             {
                 title: "Cash Out Calculator",
                 description: "This custom calculator was built for my job in the service industry with the goal of making the end of night cash out process a little easier.",
-                techs: ["React", "SCSS"],
-                icons: [ReactImg, CssImg],
+                techs: ["HTML", "SCSS", "React",],
+                icons: [HtmlImg, CssImg, ReactImg],
                 url: "https://cashout-calculator.netlify.app",
                 image: CashoutCalculatorImg
             },
