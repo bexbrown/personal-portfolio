@@ -5,7 +5,8 @@ import ArrowLeft from "../../assets/icons/arrow-left.png";
 import ArrowRight from "../../assets/icons/arrow-right.png";
 import TurtleImg from "../../assets/images/turtle.png";
 // import BrainflixImg from "../../assets/images/brainflix.png";
-import SolarSystemImg from "../../assets/images/solar-system.png";
+// import SolarSystemImg from "../../assets/images/solar-system.png";
+import MultiStepFormImg from "../../assets/images/multi-step-form.png";
 import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
 import CashoutCalculatorImg from "../../assets/images/cashout-calculator.png"
 import RockPaperScissorsImg from "../../assets/images/rock-paper-scissors.png";
@@ -23,14 +24,6 @@ function Projects() {
     let ProjectsInfo =
         [
             {
-                title: "Cash Out Calculator",
-                description: "This custom calculator was built for my job in the service industry with the goal of making the end of night cash out process a little easier.",
-                techs: ["React", "SCSS"],
-                icons: [ReactImg, CssImg],
-                url: "https://cashout-calculator.netlify.app",
-                image: CashoutCalculatorImg
-            },
-            {
                 title: "Sea Bound",
                 description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, score keeper, end game on object collision, high score form and current leaderboard rankings.  ***ONLY AVAILABLE ON DESKTOP AS IT REQUIRES ARROW KEYS***",
                 techs: ["SCSS", "React", "MySQL", "Node", "Express", "Figma"],
@@ -45,6 +38,22 @@ function Projects() {
                 icons: [HtmlImg, CssImg, ReactImg],
                 url: "https://thebeeskneesband.netlify.app",
                 image: BandSiteImg
+            },
+            {
+                title: "Multi Step Form",
+                description: "A multi-step form which includes a toggle feature, choice of add-ons, summary of selections and confirmation of order.",
+                techs: ["React", "SCSS"],
+                icons: [ReactImg, CssImg],
+                url: "https://bexbrown-multi-step-form.netlify.app/",
+                image: MultiStepFormImg
+            },
+            {
+                title: "Cash Out Calculator",
+                description: "This custom calculator was built for my job in the service industry with the goal of making the end of night cash out process a little easier.",
+                techs: ["React", "SCSS"],
+                icons: [ReactImg, CssImg],
+                url: "https://cashout-calculator.netlify.app",
+                image: CashoutCalculatorImg
             },
             // {
             //     title: "Video Player Website",
