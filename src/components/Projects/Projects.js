@@ -14,9 +14,9 @@ import HtmlImg from '../../assets/icons/html.png';
 import CssImg from '../../assets/icons/css.png';
 import JsImg from '../../assets/icons/js.png';
 import ReactImg from '../../assets/icons/react.png';
-import NodeImg from '../../assets/icons/node.png';
-import ExpressImg from '../../assets/icons/express.png';
-import MySqlImg from '../../assets/icons/mysql.png';
+// import NodeImg from '../../assets/icons/node.png';
+// import ExpressImg from '../../assets/icons/express.png';
+// import MySqlImg from '../../assets/icons/mysql.png';
 import BandSiteImg from '../../assets/images/band-site.png';
 
 function Projects() {
