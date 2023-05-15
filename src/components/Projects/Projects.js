@@ -14,9 +14,9 @@ import HtmlImg from '../../assets/icons/html.png';
 import CssImg from '../../assets/icons/css.png';
 import JsImg from '../../assets/icons/js.png';
 import ReactImg from '../../assets/icons/react.png';
-// import NodeImg from '../../assets/icons/node.png';
-// import ExpressImg from '../../assets/icons/express.png';
-// import MySqlImg from '../../assets/icons/mysql.png';
+import NodeImg from '../../assets/icons/node.png';
+import ExpressImg from '../../assets/icons/express.png';
+import MySqlImg from '../../assets/icons/mysql.png';
 import BandSiteImg from '../../assets/images/band-site.png';
 
 function Projects() {
@@ -25,9 +25,9 @@ function Projects() {
         [
             {
                 title: "Sea Bound",
-                description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, and a score keeper.  ***Not available on mobile or tablet devices as it requires arrow keys to navigate***",
-                techs: ["HTML", "SCSS", "React"],
-                icons: [HtmlImg, CssImg, ReactImg],
+                description: "A game highlighting the effects of plastic pollution on the sea turtle population.  Features include choice of sea turtle, sound effects, motion toggle, a score keeper, and current leaderboard rankings.  ***Not available on mobile or tablet devices as it requires arrow keys to navigate***",
+                techs: ["HTML", "SCSS", "React", "Node", "Express", "MySQL"],
+                icons: [HtmlImg, CssImg, ReactImg, NodeImg, ExpressImg, MySqlImg],
                 url: "https://seabound.netlify.app",
                 image: TurtleImg
             },
