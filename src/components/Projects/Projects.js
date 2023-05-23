@@ -18,6 +18,7 @@ import NodeImg from '../../assets/icons/node.png';
 import ExpressImg from '../../assets/icons/express.png';
 import MySqlImg from '../../assets/icons/mysql.png';
 import BandSiteImg from '../../assets/images/band-site.png';
+import InstockImg from '../../assets/images/instock.png';
 
 function Projects() {
 
@@ -30,6 +31,14 @@ function Projects() {
                 icons: [HtmlImg, CssImg, ReactImg, NodeImg, ExpressImg, MySqlImg],
                 url: "https://seabound.netlify.app",
                 image: TurtleImg
+            },
+            {
+                title: "Instock",
+                description: "An inventory management system. Used to track the inventory at each warehouse. Option to add, delete, and edit inventory items and warehouses.",
+                techs: ["HTML", "SCSS", "React", "Node", "Express"],
+                icons: [HtmlImg, CssImg, ReactImg, NodeImg, ExpressImg],
+                url: "https://bexbrown-instock.netlify.app",
+                image: InstockImg
             },
             {
                 title: "Band Website",
