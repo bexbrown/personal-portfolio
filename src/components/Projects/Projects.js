@@ -7,7 +7,7 @@ import TurtleImg from "../../assets/images/turtle.png";
 // import BrainflixImg from "../../assets/images/brainflix.png";
 // import SolarSystemImg from "../../assets/images/solar-system.png";
 import MultiStepFormImg from "../../assets/images/multi-step-form.png";
-import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
+// import EtchASketchImg from "../../assets/images/etch-a-sketch.png";
 import CashoutCalculatorImg from "../../assets/images/cashout-calculator.png"
 import RockPaperScissorsImg from "../../assets/images/rock-paper-scissors.png";
 import HtmlImg from '../../assets/icons/html.png';
@@ -88,14 +88,14 @@ function Projects() {
             //     url: "https://codepen.io/bexbrown/pen/rNKZEWR",
             //     // image: VideoPlayerImg
             // },
-            {
-                title: "Etch-a-Sketch",
-                description: "Sketch out some fun designs on this classic toy, then clear the board and start again!",
-                techs: ["HTML", "CSS", "JavaScript"],
-                icons: [HtmlImg, CssImg, JsImg],
-                url: "https://codepen.io/bexbrown/pen/KKeBqdb",
-                image: EtchASketchImg
-            },
+            // {
+            //     title: "Etch-a-Sketch",
+            //     description: "Sketch out some fun designs on this classic toy, then clear the board and start again!",
+            //     techs: ["HTML", "CSS", "JavaScript"],
+            //     icons: [HtmlImg, CssImg, JsImg],
+            //     url: "https://codepen.io/bexbrown/pen/KKeBqdb",
+            //     image: EtchASketchImg
+            // },
             // {
             //     title: "Solar System Orbit",
             //     description: "This mini project is out of this world. A design challenge to create solar system orbits moving at a speed relative to their actual units.",
