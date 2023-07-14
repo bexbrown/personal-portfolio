@@ -32,7 +32,7 @@ function About() {
             <div className="about__content">
                 <h2 className="about__title">About Me</h2>
                 <p className="about__text">Hello! My name is Rebecca and I create interactive websites and intuitive digital experiences. I am currently living in Toronto, Canada and have had the opportunity to live in 7+ countries.  I love exploring the world and the web.</p>
-                <p className="about__text">My web development journey began many years ago, creating simple static websites with HTML and CSS.  As my passion grew, so did my skillset. I continued self-learning through tutorials, courses and projects, all of which prepared me to tackle the challenge of a Software Engineering Bootcamp.  I enjoy all stages of designing and developing web applications.</p>
+                {/* <p className="about__text">My web development journey began many years ago, creating simple static websites with HTML and CSS.  As my passion grew, so did my skillset. I continued self-learning through tutorials, courses and projects, all of which prepared me to tackle the challenge of a Software Engineering Bootcamp.  I enjoy all stages of designing and developing web applications.</p> */}
                 <p className="about__text">Some things that I like are accessibility, inclusivity, sustainability, pixel-perfection, intuitiveness, design, fashion, food, nature & the sky.</p>
                 <h3 className="about__technologies">The technologies I am currently using are...</h3>
                 <ul className="about__list">
